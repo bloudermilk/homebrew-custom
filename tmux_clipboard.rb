@@ -6,7 +6,7 @@ class TmuxClipboard < Formula
   url "git://gist.github.com/4020666.git"
 
   def install
-    bin.install("tmux_clipboard.sh")
+    bin.install("tmux_clipboard")
   end
 
   def caveats
