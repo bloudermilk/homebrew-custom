@@ -48,9 +48,9 @@ If this is an upgrade and you already have the #{plist_path.basename} loaded:
   <key>WorkingDirectory</key>
   <string>#{HOMEBREW_PREFIX}</string>
   <key>StandardOutPath</key>
-  <string>#{var}/tmux_clipboard.log</string>
+  <string>#{var}/log/tmux_clipboard.log</string>
   <key>StandardErrorPath</key>
-  <string>#{var}/tmux_clipboard.log</string>
+  <string>#{var}/log/tmux_clipboard.log</string>
 </dict>
 </plist>
     PLIST
