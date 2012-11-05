@@ -3,7 +3,7 @@ require "formula"
 class TmuxClipboard < Formula
   homepage "https://gist.github.com/4020666"
   version "1.0"
-  url "git://gist.github.com/4020666.git"
+  head "git://gist.github.com/4020666.git"
 
   def install
     bin.install("tmux_clipboard.sh")
