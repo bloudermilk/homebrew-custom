@@ -25,7 +25,7 @@ If this is an upgrade and you already have the #{plist_path.basename} loaded:
     CAVEATS
   end
 
-  def startup_plist
+  def plist
     user = `whoami`.chomp
 
     <<-PLIST
