@@ -9,22 +9,6 @@ class TmuxClipboard < Formula
     bin.install("tmux_clipboard")
   end
 
-  def caveats
-    <<-CAVEATS
-# Start/stop tmux_clipboard
-
-If this is your first install, automatically load on login with:
-  mkdir -p ~/Library/LaunchAgents
-  cp #{plist_path} ~/Library/LaunchAgents/
-  launchctl load -w ~/Library/LaunchAgents/#{plist_path.basename}
-
-If this is an upgrade and you already have the #{plist_path.basename} loaded:
-  launchctl unload -w ~/Library/LaunchAgents/#{plist_path.basename}
-  cp #{plist_path} ~/Library/LaunchAgents/
-  launchctl load -w ~/Library/LaunchAgents/#{plist_path.basename}
-    CAVEATS
-  end
-
   def plist
     user = `whoami`.chomp
 
